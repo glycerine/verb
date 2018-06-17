@@ -25,6 +25,10 @@ func PP(format string, a ...interface{}) {
 	}
 }
 
+func VV(format string, a ...interface{}) {
+	TSPrintf(format, a...)
+}
+
 // without the file/line, otherwise the same as PP
 func PPP(format string, a ...interface{}) {
 	if VerboseVerbose {
